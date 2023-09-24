@@ -17,8 +17,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Mengyue Yang is a third-year Ph.D. student in the Department of Computer Science at University College London (UCL), advised by Professor [Jun Wang](http://www0.cs.ucl.ac.uk/staff/jun.wang/). She was a research intern at ByteDance Research, Microsoft and DIDI AI Labs. Prior to UCL, she received an M.S. degree in Computer Science from the University of Chinese Academy of Sciences. Her research interests lie on Causal Representation Learning, Reinforcement Learning and Recommendation Systems. 
+I'm a final-year Ph.D. student in the Department of Computer Science at University College London (UCL), advised by Professor [Jun Wang](http://www0.cs.ucl.ac.uk/staff/jun.wang/). I was a research intern at ByteDance Research, Microsoft and DIDI AI Labs. Prior to UCL, I received my M.S. degree in Computer Science from the University of Chinese Academy of Sciences. 
 
-Currently, she is working on solving challenging problems in causal reinforcement learning.
+My research interests lie on Causal Representation Learning, Reinforcement Learning and Recommendation Systems. Currently, I'm working on solving challenging problems in causal reinforcement learning. Feel free to reach me at mengyue.yang.20@ucl.ac.uk.
+
+
 
 
