@@ -8,7 +8,7 @@ categories: sample-posts
 featured: true
 ---
   
-  CausalVAE was officially published at CVPR in 2021 and received much attention. After two years, I have gathered various questions about CausalVAE. I will summarize some common questions and answers for everyone here. These questions mainly cover aspects related to the original paper and publicly available code.
+  CausalVAE was officially published at CVPR in 2021 and received much attention. After two years, I have collected various questions about CausalVAE. I will summarize some common questions and answers for everyone here. These questions mainly cover aspects related to the original paper and code/implementation.
 
   In addition, I will also provide some problems, discussions and challenges of CausalVAE during the time I did this work.
 
@@ -40,21 +40,33 @@ A6. To understand identifiability, it is essentially important to grasp whether 
 
 ## Questions about the Code
 
-We release our CausalVAE code in https://github.com/huawei-noah/trustworthyAI/tree/master/research/CausalVAE. 
+We release our CausalVAE code in repo: https://github.com/huawei-noah/trustworthyAI/tree/master/research/CausalVAE. 
 
 I have rectified some typos of CausalVAE code in my repo https://github.com/ymy4323460/trustworthyAI/tree/master/research/CausalVAE.
 
 **Q1. The code cannot generate images with good quality.**
 
-A1. Regarding the issue of suboptimal performance on synthetic data, it is actually due to incomplete code documentation. The resolution to this issue can be found in this link: https://github.com/huawei-noah/trustworthyAI/issues/59. You can refer to this solution to improve the performance. 
+A1. Regarding the issue of suboptimal performance on synthetic data, it is due to incomplete code documentation. The resolution to this issue can be found in the following link: https://github.com/huawei-noah/trustworthyAI/issues/59. You can refer to this solution to improve the performance. 
 
-**Q2. The code on CelebA.**
+**Q2. What does scale mean in code?**
 
-A2. After I resigned from Huawei. I don't have access to the source code. Recently I asked some related staff in Huawei - Furui Liu, Zhitang Chen and Dong Li. They could not find the related code anymore due to the changes in devices. That made me very disappointed.....
+A2. For two synthetic datasets (e.g. Pendulum and Flow), scaling is performed to normalize the labels to the range between -1 and 1. The first value in the scale is the mean, and the second value is half of the range size. For example, if there is a one-dimensional value in the pendulum data that ranges from -120 to 120, the scale would be set as [mean=0, scale=120]. After scaling, the value 120 would be normalized to 1.
+
+**Q3. how are the MIC and TIC metrics implemented?**
+
+A3. We computed the correlation between u and z_given_dag (i.e. z_given_dag is the learned representation) by TIC and MIC score. The specific calculation process involved taking the average of the 4-dimensional vectors corresponding to one concept in z_given_dag to obtain a 1-dimensional vector. Then, the correlation between the 1-dimensional vectors of the four concepts and u can be computed.
+
+**Q4. Is the causal graph parameter A implemented using a binary matrix?**
+
+In implementation, the causal graph uses continuous values and is not mapped to binary values.
+
+**Q5. The code on CelebA.**
+
+A5. After I resigned from Huawei. I don't have access to the source code. Recently I asked some related staff in Huawei - Furui Liu, Zhitang Chen and Dong Li. They could not find the related code anymore due to the changes in devices. That made me very disappointed.....
 
 The architecture of the neural network on CelebA might have some differences from mask.py I hope that the following suggestions might be helpful.
 
-1. You can try to use a more complex encoder/decoder like resnet or modify the dimension and the number of layers in ConvNet.
+1. You can try to use a more complex encoder/decoder like ResNet or modify the dimension and the number of layers in ConvNet.
 
 2. Change the self.scale in CausalVAE class as self.scale = np.array([[0, 1],[0, 1],[0,1],[0,1]])
 
@@ -68,7 +80,7 @@ The architecture of the neural network on CelebA might have some differences fro
 
 #### The challenges in CausalVAE.
 
-In experimental observations, we noticed that sometimes even if the causal graph is not learned well enough, good intervention results can still be achieved. This observation does not align with our initial expectations for the paradigm of embedding causal learning into other tasks. This phenomenon implies that causal relationships are actually captured by other parts of the model, such as the decoder/generator. This is disastrous for embedding causal methods into other tasks and models because even if we can observe some results with causal properties, it does not necessarily mean that causal relationships are truly being identified. In the CausalVAE paper, our identifiability theory can only guarantee that there is a one-to-one correspondence between the learned representation z and the true representation. Additionally, the optimization theory for u in the mask layer theoretically helps us learn the true causal graph. However, in multi-objective learning (such as CausalVAE, which includes causal learning and image generation), the power of this identifiability in experiments may be reduced. Therefore, in our experiments, we have to set a pre-train step causal graph learning to some extent, which disrupts the end-to-end architecture.
+In experimental observations, we noticed that sometimes even if the causal graph is not learned well enough, good intervention results can still be achieved. This observation does not align with our initial expectations for the paradigm of embedding causal learning into other tasks. This phenomenon implies that causal relationships are captured by other parts of the model, such as the decoder/generator. This is disastrous for embedding causal methods into other tasks and models because even if we can observe some results with causal properties, it does not necessarily mean that causal relationships are truly being identified. In the CausalVAE paper, our identifiability theory can only guarantee that there is a one-to-one correspondence between the learned representation z and the true representation. Additionally, the optimization theory for u in the mask layer theoretically helps us learn the true causal graph. However, in multi-objective learning (such as CausalVAE, which includes causal learning and image generation), the power of this identifiability in experiments may be reduced. Therefore, in our experiments, we have to set a pre-train step causal graph learning to some extent, which disrupts the end-to-end architecture.
 
 We believe that there are still several unfinished challenges in CausalVAE:
 
