@@ -61,7 +61,7 @@ In implementation, the causal graph uses continuous values and is not mapped to 
 
 **Q5. The code on CelebA.**
 
-A5. After I resigned from Huawei. I don't have access to the source code. Recently I asked some related staff in Huawei - Furui Liu, Zhitang Chen and Dong Li. They could not find the related code anymore due to the changes in devices. That made me very disappointed.....
+A5. After I finished my collaboration with Huawei. I don't have access to the source code in Huawei. Recently I asked some related staffs - Furui Liu, Zhitang Chen and Dong Li. They could not find the related code anymore due to the changes in devices. That made me very disappointed.....
 
 The architecture of the neural network on CelebA might have some differences from mask.py I hope that the following suggestions might be helpful.
 
