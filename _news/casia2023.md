@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invied talk about causal disentanglement learning at CASIA. 
+Invited talk on causal disentanglement learning at CASIA. 
