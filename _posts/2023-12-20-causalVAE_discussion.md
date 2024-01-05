@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Discussion about CausalVAE - from content to implementation
+title: Discussion about CausalVAE - from method to implementation
 date: 2023-12-20 09:16:00
-description: find questions and answers about CausalVAE.
+description: Q&A about CausalVAE.
 tags: discussion
 featured: true
 ---
