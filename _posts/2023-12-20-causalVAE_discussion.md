@@ -71,9 +71,15 @@ The architecture of the neural network on CelebA might have some differences fro
 
 3. Use smaller lambdav/alpha in CausalVAE class like 1e-5, which can help to lower the variance of representation. Smaller beta like 0.1-0.3 can also help.
 
-4. Decrease the weighting of 'kl' term and mask_l in nelbo = rec + 'kl' + mask_l
+4. Try MSE Loss instead of BCE Loss for image reconstruction. In code, change the loss function used in [ut.log_bernoulli_with_logits](https://github.com/ymy4323460/trustworthyAI/blob/master/research/CausalVAE/codebase/models/mask_vae_flow.py).
 
-5. Init self.A in DagLayer class as an upper triangular matrix, or pre-train causal graph matrix by augmented Lagrange method. Like No-tears and DAG-GNN. A tip: You can try the true graph as the initialization to make sure some architectures of the decoder can work well. But the true graph initialization is not allowed when you want to train a whole model.
+5. Decrease the weighting of 'kl' term and mask_l in nelbo = rec + 'kl' + mask_l
+
+6. Init self.A in DagLayer class as an upper triangular matrix, or pre-train causal graph matrix by augmented Lagrange method. Like No-tears and DAG-GNN. A tip: You can try the true graph as the initialization to make sure some architectures of the decoder can work well. But the true graph initialization is not allowed when you want to train a whole model.
+
+7. We found that after training, when performing interventions, the representation range that causes changes in generated images is not limited to the normalized [-1, 1] range. If you want to discover the range of intervals, you need to try changing the intervention value over a larger range to observe changes in generated images.
+
+
 
 ## Discussion of CausalVAE
 
