@@ -20,7 +20,4 @@ I'm a final-year Ph.D. student in the Department of [Computer Science](https://w
 
 My research interests are Reinforcement Learning, Multi-agent Systems and Causality. If you would like to chat about potential collaboration or common interests, feel free to reach me at mengyue.yang.20@ucl.ac.uk.
 
-I will be joining the School of Engineering, Mathematics and Technology at University of Bristol as Lecturer (= US Assistant Professor) in AI.
-
-
 
