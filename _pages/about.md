@@ -6,7 +6,7 @@ subtitle: University of Bristol
 
 profile:
   align: right
-  image: IMG_1188.JPG
+  image: IMG_1201.JPG
   image_circular: false # crops the image to make it circular
   address: >
 
