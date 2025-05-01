@@ -20,4 +20,6 @@ I'm currently a Lecturer (= US Assistant Professor) at the School of [Engineerin
 
 My research interests are Reinforcement Learning, Multi-agent Systems and Causality, especially causality in world models. If you would like to chat about potential collaboration or common interests, feel free to reach me at yangmy6750@gmail.com.
 
+I'm a gamer with a strong interest in strategy games, such as Civilization, Crusader Kings, and Europa Universalis. I'm also a beginner at chess (chess.com account: yangmy6750).
+
 
