@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited talk at Shanggai Jiaotong University and Fudan University.
+Invited talk at Shanghai Jiao Tong University and Fudan University.
