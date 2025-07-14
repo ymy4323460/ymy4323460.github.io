@@ -3,7 +3,7 @@ layout: page
 permalink: /misc./
 title: misc.
 description:
-nav: false
+nav: true
 nav_order: 4
 ---
 
