@@ -41,4 +41,3 @@ But I’m not sad; that dream carried me all the way here.
 I made it this far.
 And if you start from a higher place than I did, you absolutely can too.
 
-<img width="2162" height="1418" alt="eae54135-216c-4dbf-8adc-031dd697ec85" src="https://github.com/user-attachments/assets/00cdb3bc-ff28-45d7-9cca-72d654dd2aa4" />
