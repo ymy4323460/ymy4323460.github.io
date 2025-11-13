@@ -6,7 +6,6 @@ description: This is a story about talent, effort, and whether someone like me c
 tags: discussion
 featured: true
 ---
-  
 
 This is a story about talent, effort, and whether someone like me could ever really do research.
 
