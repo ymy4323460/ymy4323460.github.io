@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Slow Path to Research: For Those Who Think They’re Not Enough
+title: A Slow Path to Research
 date: 2025-11-13 09:16:00
 description: This is a story about talent, effort, and whether someone like me could ever really do research..
 tags: discussion
