@@ -19,7 +19,7 @@ A. Strategic Games： Civilization, Crusader Kings III, Two Point Hospital, Don�
 
 B. Narrative Games: What Remains of Edith Finch, Late Shift, Detroit: Become Human, Nier: Automata, Final Fantasy XIII, 仙剑 4–7, Rusty Lake series
 
-C. Action & Open-World Adventure: Black Myth: Wukong, Dying Light, Outlast II, Devil May Cry 4 & 5, Trine series, Yanyun Sixteen Voices
+C. Action & Open-World Adventure: Black Myth: Wukong, Dying Light, Outlast II, Devil May Cry 4 & 5, Trine series, 燕云十六声
 
 D. MOBA, Team-Based: League of Legends
 
