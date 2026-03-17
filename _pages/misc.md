@@ -15,11 +15,11 @@ More recently, I’ve begun learning chess as a complete beginner. It’s a humb
 
 Games I played and recommend:
 
-A. Strategic Games： Civilization, Crusader Kings III, Two Point Hospital, Don’t Starve, 7 Days to Die
+A. Strategic Games： Civilization, Crusader Kings III, Two Point Hospital, Don’t Starve, 7 Days to Die, Age of Empires II
 
-B. Narrative Games: What Remains of Edith Finch, Late Shift, Detroit: Become Human, Nier: Automata, Final Fantasy XIII, 仙剑 4–7, Rusty Lake series
+B. Narrative Games: What Remains of Edith Finch, Late Shift, Detroit: Become Human, Nier: Automata, Final Fantasy VII, 仙剑 4–7, Rusty Lake series, 燕云十六声
 
-C. Action & Open-World Adventure: Black Myth: Wukong, Dying Light, Outlast II, Devil May Cry 4 & 5, Trine series, 燕云十六声
+C. Action & Open-World Adventure: Black Myth: Wukong, Dying Light, Outlast II, Devil May Cry 4 & 5, Trine series
 
 D. MOBA, Team-Based: League of Legends
 
